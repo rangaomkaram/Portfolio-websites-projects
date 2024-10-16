@@ -1,0 +1,118 @@
+/* Universal  */
+
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    scroll-behavior: smooth;
+    border: none;
+    font-family: -apple-system, sans-serif;
+}
+
+
+
+/* fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
+:root{
+    --bg-color : #0a0a0a;
+    --secondary-bg-color : #101022;
+    --text-color : #fff;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: darkmagenta;
+    width: 40px;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+/* Header Section */
+
+header{
+    position: fixed;
+    width: 100%;
+    top : 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    overflow-x: visible;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    transition : all 0.3s ease
+
+}
+
+.logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.logo a span {
+    color : purple;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: flex;
+}
+
+button{
+    appearance: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding : 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    color : inherit;
+    line-height: none;
+    text-transform: none;
+    text-decoration: none;
+    overflow: visible;
+    border: none;
+}
+
+button span {
+    color : #fff;
+}
+
+.menu li {
+    display: flex;
+    gap : 1rem;
+    font-size: 1.4rem;
+    color : #fff;
+
+}
+
