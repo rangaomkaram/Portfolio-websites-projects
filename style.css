@@ -161,3 +161,8 @@ li>a>button:focus-visible>span:last-of-type,li>a>button:hover>span:last-of-type{
     display: none;
 
 }
+
+img{
+    width: 25px;
+}
+
