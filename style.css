@@ -166,3 +166,6 @@ img{
     width: 25px;
 }
 
+img .github{
+    filter:brightness(100%);
+}
