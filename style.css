@@ -26,6 +26,8 @@
     --bg-color : #0a0a0a;
     --secondary-bg-color : #101022;
     --text-color : #fff;
+    --primary-color : #fc03fc;
+    --secondary-color : #56025b;
 }
 
 html{
@@ -39,7 +41,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: darkmagenta;
+    background-color: var(--secondary-color);
     width: 40px;
 }
 
@@ -79,7 +81,7 @@ header{
 }
 
 .logo a span {
-    color : #fc03fc;
+    color : var(--primary-color);
     transition: all 0.3s ease;
 }
 
@@ -144,7 +146,7 @@ li>a>button:focus-visible>span:first-of-type,li>a>button:hover>span:first-of-typ
 
 li>a>button:focus-visible>span:last-of-type,li>a>button:hover>span:last-of-type{
     transform: scale(1);
-    color : #fc03fc;
+    color : var(--primary-color);
 }
 
 .menu a {
@@ -162,10 +164,100 @@ li>a>button:focus-visible>span:last-of-type,li>a>button:hover>span:last-of-type{
 
 }
 
-img{
-    width: 25px;
+
+
+/* social-media-icons */
+
+.social-media-icons>a>i{
+    color : var(--primary-color);
 }
 
-img .github{
-    filter:brightness(100%);
+.home{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
 }
+.profile-img img{
+    width: 24vw;
+    margin-left: 100px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50% 48% 47% 51% / 49% 49% 51% 51%;
+    animation: borderAnimation 3s linear infinite;
+}
+
+@keyframes borderAnimation {
+    0%{
+        border-radius: 50% 48% 47% 51% / 49% 49% 51% 51%;
+    }
+    35%{
+        border-radius: 60% 40% 57% 43% / 40% 54% 46% 60%;
+    }
+    65%{
+        border-radius: 67% 33% 68% 32% / 27% 70% 30% 70%;
+    }
+    100%{
+        border-radius: 50% 48% 47% 51% / 49% 49% 51% 51%;
+    }
+}
+
+.Intro-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin-bottom: -200px;
+    width: 60%;
+}
+
+.Intro-text .hello{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: -20px;
+    color: var(--text-color);
+}
+
+.Intro-name{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-block: 20px;
+    margin-bottom: 10px;
+}
+
+#SliderValue {
+    font-size: 70px;
+    display: flex;
+    font-family: sans-serif;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* inserting elements from js */
+
+.start{
+    opacity: 0;
+}
+
+.animation{
+    animation: fade .3s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }   
+}
+
+
+
+
+
+
+
