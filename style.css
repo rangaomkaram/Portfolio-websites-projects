@@ -55,6 +55,15 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* inserting elements from js */
+
+.start{
+    opacity: 0;
+}
+
+.animation{
+    animation: fade .3s forwards;
+}
 
 /* Header Section */
 
@@ -70,7 +79,7 @@ header{
     align-items: center;
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
-    transition : all 0.3s ease
+    transition : all 0.3s ease;
 
 }
 
@@ -164,21 +173,15 @@ li>a>button:focus-visible>span:last-of-type,li>a>button:hover>span:last-of-type{
 
 }
 
-
-
-/* social-media-icons */
-
-.social-media-icons>a>i{
-    color : var(--primary-color);
-}
-
 .home{
     display: flex;
     align-items: center;
     background-color: var(--bg-color);
+    margin-bottom: -100px;
 }
 .profile-img img{
-    width: 24vw;
+    margin-bottom: -80px;
+    width: 20vw;
     margin-left: 100px;
     border: 3px solid var(--primary-color);
     border-radius: 50% 48% 47% 51% / 49% 49% 51% 51%;
@@ -234,15 +237,7 @@ li>a>button:focus-visible>span:last-of-type,li>a>button:hover>span:last-of-type{
     font-weight: 600;
 }
 
-/* inserting elements from js */
 
-.start{
-    opacity: 0;
-}
-
-.animation{
-    animation: fade .3s forwards;
-}
 
 @keyframes fade {
     0% {
@@ -255,9 +250,92 @@ li>a>button:focus-visible>span:last-of-type,li>a>button:hover>span:last-of-type{
     }   
 }
 
+.container-animation{
+    animation: container 4s;
+}
+
+@keyframes container {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
+
+.Intro-text-info{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* social-media-icons */
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -5px;
+    gap : 32px;
+}
 
 
 
+.social-media-icons i{
+    color : var(--primary-color);
+    font-size: 16px;
+    background-color: transparent;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 0 1px 5px 3px var(--primary-color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social-media-icons i:hover{
+    transform: scale(1.5);
+}
+
+/* About Section */
+
+.about{
+    background-color: var(--bg-color);
+    min-height: 50vh;
+}
+
+
+.title_about{
+    color: var(--text-color);
+    margin-bottom: 1.1rem;
+    position: relative;
+    display:inline-block;
+    font-size: 3.5rem;
+}
+
+.about p{
+    color: var(--text-color);
+    margin: 1.5rem 0;
+    font-size: 20px;
+}
+
+.btn-resume{
+    display: inline-block;
+    background: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    color: var(--text-color);
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
 
 
 
