@@ -1,143 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <title>Protfolio</title>
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo"><a href="#">Ranga<span>Omkaram.</span></a>
-        </div>
-        <ul class="menu">
-            <li>
-                <a href="">
-                    <button type="button">
-                        <span>Home</span>
-                        <span class="fa-solid fa-house fa-2x"></span>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <button type="button">
-                        <span>About</span>
-                        <span class="fa-solid fa-address-card fa-2x" ></span>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <button type="button">
-                        <span>Skills</span>
-                        <span class="fa-solid fa-cogs fa-2x"></span>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <button type="button">
-                        <span>Projects</span>
-                        <span class="fa-solid fa-rocket fa-2x"></span>
-                    </button>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <button type="button">
-                        <span>Contact</span>
-                        <span class="fa-solid fa-handshake fa-2x"></span>
-                    </button>
-                </a>
-            </li>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-        </ul>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
-    <!-- Sections -->
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="Intro-text">
-            <div class="hello">
-                <p>Hello I'm</p>
-            </div>
-            <div class="Intro-name">
-                <span id="SliderValue"></span>
-            </div>
-            <div class="Intro-text-info">
-                <p>My Name is RangaOmkaram! I'm a Frontend Developer with over 3+ years of Experience</p>
-            </div>
-            <div class="social-media-icons">
-                <a href="https://github.com/rangaomkaram">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/rangaomkaram/">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="https://medium.com/@rangasesha.uday">
-                    <i class="fa-solid fa-m fa-2x"></i>
-                </a>
-                <a href="https://x.com/ranga_omkaram">
-                    <i class="fab fa-x-twitter fa-2x"></i>
-                </a>   
-            </div>
-        </div>
-        <div class="profile-img">
-            <img src="./assests/profile.png" alt="">
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <div class="about-container">
-                <div class="about">
-                    <h1 class="title_about">About Me</h1>
-                    <p>I am a front-end developer with 3+ years of experience creating responsive, high-performance web applications. Proficient in HTML, CSS, and JavaScript, I excel in building dynamic UIs with React and Tailwind CSS. My skill set includes optimizing workflows with Webpack, managing APIs using Postman, and leveraging Node.js for full-stack integration. I’m also experienced with development tools such as Yarn and Vite to ensure efficient project builds.
-                    </p>   
-                    <!-- attach google drive file -->
-                    <a href="#" class="btn-resume">My Resume</a>
-                </div>   
-            </div>
-        </div>
-    </section>
-    <!-- Skills Section  -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My<span> Skills</span></h2>
-        <div class="skills-content">
-            <div class="skills-list">
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Frontend Development</h2>
-                    <p>TailwindCSS, Chakra UI, BootStrap, Reactjs,Canva</p>
-                    <a href="#">Many more...</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>HTML, CSS, JavaScript, jQuery</p>
-                    <a href="#">Many more...</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-server"></i>
-                    <h2>App/API Testing </h2>
-                    <p>Postman, Jmeter, Mocha, Cypress, Karma</p>
-                    <a href="#">Many more...</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-database"></i>
-                    <h2>Backend Development</h2>
-                    <p>MySQL, MongoDB, Express, Nodejs, Nextjs, Yarn, Vite</p>
-                    <a href="#">Many more...</a>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
-</html
+		<title>Protfolio</title>
+	</head>
+	<body>
+		<!-- Header Section -->
+		<header>
+			<div class="logo">
+				<a href="#">Ranga<span>Omkaram.</span></a>
+			</div>
+			<ul class="menu">
+				<li>
+					<a href="">
+						<button type="button">
+							<span>Home</span>
+							<span class="fa-solid fa-house fa-2x"></span>
+						</button>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<button type="button">
+							<span>About</span>
+							<span class="fa-solid fa-address-card fa-2x"></span>
+						</button>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<button type="button">
+							<span>Skills</span>
+							<span class="fa-solid fa-cogs fa-2x"></span>
+						</button>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<button type="button">
+							<span>Projects</span>
+							<span class="fa-solid fa-rocket fa-2x"></span>
+						</button>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<button type="button">
+							<span>Contact</span>
+							<span class="fa-solid fa-handshake fa-2x"></span>
+						</button>
+					</a>
+				</li>
+			</ul>
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</header>
+		<!-- Sections -->
+		<!-- Home Section -->
+		<section class="home" id="home">
+			<div class="Intro-text">
+				<div class="hello">
+					<p>Hello I'm</p>
+				</div>
+				<div class="Intro-name">
+					<span id="SliderValue"></span>
+				</div>
+				<div class="Intro-text-info">
+					<p>
+						My Name is RangaOmkaram! I'm a Frontend Developer with
+						over 3+ years of Experience
+					</p>
+				</div>
+				<div class="social-media-icons">
+					<a href="https://github.com/rangaomkaram">
+						<i class="fab fa-github fa-2x"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/rangaomkaram/">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+					<a href="https://medium.com/@rangasesha.uday">
+						<i class="fa-solid fa-m fa-2x"></i>
+					</a>
+					<a href="https://x.com/ranga_omkaram">
+						<i class="fab fa-x-twitter fa-2x"></i>
+					</a>
+				</div>
+			</div>
+			<div class="profile-img">
+				<img src="./assests/profile.png" alt="" />
+			</div>
+		</section>
+		<!-- About Section -->
+		<section class="about" id="about">
+			<div class="max-width">
+				<div class="about-container">
+					<div class="about">
+						<h1 class="title_about">About Me</h1>
+						<p>
+							I am a front-end developer with 3+ years of
+							experience creating responsive, high-performance web
+							applications. Proficient in HTML, CSS, and
+							JavaScript, I excel in building dynamic UIs with
+							React and Tailwind CSS. My skill set includes
+							optimizing workflows with Webpack, managing APIs
+							using Postman, and leveraging Node.js for full-stack
+							integration. I’m also experienced with development
+							tools such as Yarn and Vite to ensure efficient
+							project builds.
+						</p>
+						<!-- attach google drive file -->
+						<a href="#" class="btn-resume">My Resume</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Skills Section  -->
+		<section class="skills" id="skills">
+			<h2 class="heading">My Skills</h2>
+			<div class="skills-content">
+				<div class="skills-list">
+					<div>
+						<i class="fa-brands fa-app-store"
+							><span>Frontend Development</span></i
+						>
+						<ul class="frontend">
+							<li>TailwindCSS</li>
+							<li>Chakra UI</li>
+							<li>BootStrap</li>
+							<li>Reactjs</li>
+							<li>Canva</li>
+						</ul>
+						<a href="#">Many more...</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-code"
+							><span>Web Development</span></i
+						>
+						<ul class="web-dev">
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+						</ul>
+						<a href="#">Many more...</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-server"
+							><span>App/API Testing </span></i
+						>
+						<ul class="api-test">
+							<li>Postman</li>
+							<li>Karma</li>
+							<li>Mocha</li>
+							<li>Cypress</li>
+							<li>Jest</li>
+							<li>Playwright</li>
+						</ul>
+						<a href="#">Many more...</a>
+					</div>
+					<div>
+						<i class="fa-solid fa-database"
+							><span>Backend Development</span></i
+						>
+						<ul class="backend">
+							<li>MongoDB</li>
+							<li>MySql</li>
+							<li>Expressjs</li>
+							<li>Nodejs</li>
+							<li>Yarn</li>
+							<li>Vite</li>
+						</ul>
+						<a href="#">Many more...</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Protfolio/ projects sections -->
+		<section class="protfolio" id="profolio">
+			<h2 class="heading-proj">Projects</h2>
+			<div class="projects-list">
+				<div class="projects">
+					<img src="./assests/profile.png" class="image" />
+					<p>
+						Social Media Platform
+						<i class="fab fa-github fa-2x"></i>
+					</p>
+				</div>
+				<div class="projects">
+					<img src="./assests/profile.png" class="image" />
+					<p>
+						Project Management <i class="fab fa-github fa-2x"></i>
+					</p>
+				</div>
+				<div class="projects">
+					<img src="./assests/profile.png" class="image" />
+					<p>Code Editor <i class="fab fa-github fa-2x"></i></p>
+				</div>
+				<div class="projects">
+					<img src="./assests/profile.png" class="image" />
+					<p>E-commerce <i class="fab fa-github fa-2x"></i></p>
+				</div>
+				<div class="projects">
+					<img src="./assests/profile.png" class="image" />
+					<p>
+						Appointment booker <i class="fab fa-github fa-2x"></i>
+					</p>
+				</div>
+				<div class="projects">
+					<img src="./assests/profile.png" />
+					<p>Project six <i class="fab fa-github fa-2x"></i></p>
+				</div>
+			</div>
+		</section>
+		<!-- Contact Section -->
+		<section  class="contact-me">
+			
+			<form
+				action="https://api.web3forms.com/submit"
+				method="POST"
+				class="contact-form"
+			>
+				<input
+					type="hidden"
+					name="access_key"
+					value="YOUR_ACCESS_KEY_HERE"
+				/>
+                <h1 class="heading-contact">Contact Me</h1>
+				<input
+					type="text"
+					name="your-name"
+					id="name"
+					placeholder="Your Name"
+					required
+				/>
+				<input
+					type="email"
+					name="email-id"
+					id="email-id"
+					placeholder="Your Email Address"
+					required
+				/>
+				<textarea
+					for="text"
+					id="message"
+					placeholder="Give me info if it is about hiring or any specific project works like build dashboards e.t.c.."
+				></textarea>
+				<button type="submit">Submit</button>
+			</form>
+			<div class="d3-img">
+				<div id="observablehq-chart-5e6c7ca8"></div>
+			</div>
+			<link
+				rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css"
+			/>
+			<script type="module" src="./d3-network.js" defer></script>
+		</section>
+	</body>
+</html>
