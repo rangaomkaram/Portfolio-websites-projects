@@ -368,7 +368,7 @@ li > a > button:hover > span:last-of-type {
 
 .skills-list ul > li:hover {
 	transform: translateY(-5px);
-    color: var(--list-color);
+	color: var(--list-color);
 }
 
 .skills-list div i {
@@ -477,7 +477,8 @@ li > a > button:hover > span:last-of-type {
 	gap: 20px;
 }
 
-.heading-contact,.connect {
+.heading-contact,
+.connect {
 	font-family: 600;
 	font-size: 40px;
 	color: var(--primary-color);
@@ -515,23 +516,23 @@ li > a > button:hover > span:last-of-type {
 	cursor: pointer;
 }
 
-.footer-content{
+.footer-content {
 	display: inline-block;
 	margin-left: 100px;
 }
 
-
-.social-icons ul{
+.social-icons ul {
 	display: flex;
 	align-items: center;
 	text-align: center;
 	padding-top: 20px;
 	margin-left: 20px;
-	justify-content: space-evenly;	
+	justify-content: space-evenly;
 }
 
-.social-icons ul>li>a{
+.social-icons ul > li > a {
 	display: inline;
 	color: var(--text-color);
 	font-size: 10px;
+	text-decoration: none;
 }
