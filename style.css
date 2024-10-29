@@ -23,6 +23,7 @@
 	--primary-color: #fc03fc;
 	--secondary-color: #7300ff;
 	--card-color: #b707fd;
+	--list-color: #07f3f7;
 }
 
 html {
@@ -353,6 +354,23 @@ li > a > button:hover > span:last-of-type {
 	transition: background 0.5s, transform 0.5s;
 }
 
+.skills-list ul > li {
+	background: linear-gradient(
+		180deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	padding: 10px 10px;
+	color: var(--text-color);
+	border-radius: 50px;
+	margin-left: 2px;
+}
+
+.skills-list ul > li:hover {
+	transform: translateY(-5px);
+    color: var(--list-color);
+}
+
 .skills-list div i {
 	font-size: 50px;
 	margin-bottom: 30px;
@@ -438,36 +456,82 @@ li > a > button:hover > span:last-of-type {
 	backface-visibility: hidden;
 }
 
-.projects:hover img {
-	opacity: 0.3;
-}
-
 .projects-list:hover .proj-details {
 	opacity: 1;
 }
 
-
-.contact-form,
+/* .contact-form,
 .d3-img{
     border: 1px solid red;
+} */
+
+.contact-me {
+	display: flex;
+	align-items: center;
 }
 
-.contact-me{
- display: flex;
- align-items: center;
-
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 20px;
 }
 
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+.heading-contact,.connect {
+	font-family: 600;
+	font-size: 40px;
+	color: var(--primary-color);
+	margin-bottom: 5px;
 }
 
-.heading-contact{
-    font-family: 600;
-    font-size: 40px;
-    color: var(--primary-color);
-    
+.inputs-contact,
+.message-me {
+	width: 400px;
+	height: 50px;
+	border: 0;
+	outline: none;
+	border-radius: 50px;
+	padding-left: 25px;
+	color: var(--secondary-bg-color);
+	font-weight: 500;
+}
+
+.message-me {
+	height: 120px;
+	border-radius: 20px;
+	padding-top: 10px;
+}
+
+.contact-form button {
+	border: 0;
+	background: linear-gradient(
+		270deg,
+		var(--card-color),
+		var(--primary-color)
+	);
+	font-size: 16px;
+	border-radius: 50px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.footer-content{
+	display: inline-block;
+	margin-left: 100px;
+}
+
+
+.social-icons ul{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	justify-content: space-evenly;	
+}
+
+.social-icons ul>li>a{
+	display: inline;
+	color: var(--text-color);
+	font-size: 10px;
 }

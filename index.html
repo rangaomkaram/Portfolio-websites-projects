@@ -23,7 +23,7 @@
 			</div>
 			<ul class="menu">
 				<li>
-					<a href="">
+					<a href="#home">
 						<button type="button">
 							<span>Home</span>
 							<span class="fa-solid fa-house fa-2x"></span>
@@ -31,7 +31,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#about">
 						<button type="button">
 							<span>About</span>
 							<span class="fa-solid fa-address-card fa-2x"></span>
@@ -39,7 +39,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#skills">
 						<button type="button">
 							<span>Skills</span>
 							<span class="fa-solid fa-cogs fa-2x"></span>
@@ -47,7 +47,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#protfolio">
 						<button type="button">
 							<span>Projects</span>
 							<span class="fa-solid fa-rocket fa-2x"></span>
@@ -55,7 +55,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#contactme">
 						<button type="button">
 							<span>Contact</span>
 							<span class="fa-solid fa-handshake fa-2x"></span>
@@ -188,7 +188,7 @@
 			</div>
 		</section>
 		<!-- Protfolio/ projects sections -->
-		<section class="protfolio" id="profolio">
+		<section class="protfolio" id="protfolio">
 			<h2 class="heading-proj">Projects</h2>
 			<div class="projects-list">
 				<div class="projects">
@@ -225,7 +225,7 @@
 			</div>
 		</section>
 		<!-- Contact Section -->
-		<section  class="contact-me">
+		<section  class="contact-me" id="contactme">
 			
 			<form
 				action="https://api.web3forms.com/submit"
@@ -235,29 +235,30 @@
 				<input
 					type="hidden"
 					name="access_key"
-					value="YOUR_ACCESS_KEY_HERE"
+					value="e726c621-cc77-4dbe-b2ce-ed6015e1ab2e"
 				/>
                 <h1 class="heading-contact">Contact Me</h1>
-				<input
+				<input class="inputs-contact"
 					type="text"
 					name="your-name"
 					id="name"
-					placeholder="Your Name"
+					placeholder="Your Name "
 					required
 				/>
-				<input
+				<input class="inputs-contact"
 					type="email"
 					name="email-id"
 					id="email-id"
-					placeholder="Your Email Address"
+					placeholder="Your Email Address "
 					required
 				/>
-				<textarea
+				<textarea class="message-me"
 					for="text"
 					id="message"
-					placeholder="Give me info if it is about hiring or any specific project works like build dashboards e.t.c.."
+					placeholder="Enter your message, if it is about hiring or any specific project works like build dashboards/webistes to collabrate or any feedback ...."
+                    required
 				></textarea>
-				<button type="submit">Submit</button>
+				<button type="submit">Submit <i class="fa-solid fa-arrow-right"></i></button>
 			</form>
 			<div class="d3-img">
 				<div id="observablehq-chart-5e6c7ca8"></div>
@@ -268,5 +269,27 @@
 			/>
 			<script type="module" src="./d3-network.js" defer></script>
 		</section>
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <h1 class="connect">Let's Connect to discuss </h1>
+                <form action="" method="post" >
+                    <input type="email" name="email-id" id="email-id">
+                <button type="submit">Hire Me</button>
+                </form>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#protfolio">Protfolio Projects</a></li>
+                        <li><a href="#skills">Tech Stack</a></li>
+                        <li><a href="#contactme">Queries</a></li>
+                    </ul>
+                </div>
+                <p>&copy; 2023 <span class="footer-name">Ranga Omkaram</span>
+                    </p>
+                    
+            </div>
+        </footer>
 	</body>
 </html>
