@@ -1,0 +1,132 @@
+                <div class="education">
+                    <h3 class="Qualification">Education</h1>
+                        <ul class = "degree">
+                            <li class="btech"><strong>B.tech EEE (2011 - 2015)</strong>
+                                <p>Vignan's University, Guntur </p>
+                                <p>Pursued graduation with 81.77% </p>
+                            </li>
+                            <li class="meng"><strong>M.Eng Geodesy and GeoInformatics(2018 - 2021)</strong>
+                                <p>Hochschule Neubrandenburg, Germany</p>
+                                <p>Master thesis Incomplete due to health reasons.</p>
+                            </li>
+                        </ul>
+
+                </div>
+                <div class="experience">
+                    <h1 class="title_experience">Experience</h1>
+                    <ul>
+                        <li>Frontend Developer
+                            <a href="http://megaroy.com">Megaroy Solutions</a>
+                        </li>
+                        <li>Student Intern - GIS analyst
+                            <a href="http://">John Deere-ETIC</a>
+                        </li>
+                        <li>Education Consultant</li>
+                    </ul>
+                </div>
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
+
+ <div class="footer">
+    <p>Footer</p>
+  </div>
+
+
+<footer>
+<div class="footer-content">
+<p>&copy; 2024 Ranga Omkaram. All Rights Reserved.</p>
+<ul class="socials">
+<li><a href="https://github.com/username" target="_blank">GitHub</a></li>
+<li><a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a></li>
+<li><a href="mailto:email@example.com">Contact</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#protfolio">Projects</a></li>
+</ul>
+</div>
+</footer>
+
+CSS Code for Footer
+footer {
+background-color: #333;
+color: white;
+padding: 20px;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-content ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-content a {
+color: #ffcc00; /* Highlight color for links */
+text-decoration: none;
+}
+
+.footer-links {
+text-align: center;
+margin-top: 15px;
+}
+
+.footer-links ul {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.footer-links a:hover {
+text-decoration: underline;
+}
+
+JavaScript Code (Optional)
+If you want to add an interactive feature, such as a button to scroll to the top of the page, you can include this small JavaScript snippet:
+
+document.addEventListener("DOMContentLoaded", function() {
+const scrollToTopBtn = document.createElement('button');
+scrollToTopBtn.textContent = 'Back to Top';
+scrollToTopBtn.classList.add('scroll-to-top');
+document.body.appendChild(scrollToTopBtn);
+
+scrollToTopBtn.addEventListener('click', function() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+});
+
+Additional CSS for Scroll to Top Button (optional)
+.scroll-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #ffcc00;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+display: none; /* Hidden by default */
+}
+
+window.addEventListener('scroll', () => {
+scrollToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+This footer design enhances the visual appeal of your portfolio, provides easy navigation, and includes social media links for improved connectivity with potential clients or collaborators.
+
